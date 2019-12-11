@@ -29,6 +29,18 @@ public class Counting_HyperLinks {
 
 			System.out.println("Hyper Link Name : "+HyperLinkName +"\t\t\t"+"Hyper Link URL : "+HyperLinkUrl);
 		}
+		
+		//get collection of links using forEach
+		System.out.println("\n\n");
+		List<WebElement> linksAll=driverChrome.findElements(By.tagName("a"));
+		System.out.println("Total no. of links are : "+linksAll.size());
+		for(WebElement each:linksAll)
+		{
+			String linkName=each.getText();
+			String linkUrl=each.getAttribute("href");
+			System.out.println("Link Name : "+linkName+"\t\t"+"Link URL : "+linkUrl);
+		}
+		
 		driverChrome.close();
 	}
 
