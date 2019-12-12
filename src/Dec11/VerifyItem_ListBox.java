@@ -17,32 +17,61 @@ public class VerifyItem_ListBox {
 		drChrome.navigate().to("http://www.newtours.demoaut.com/");
 		//drChrome.navigate().to("https://www.amazon.in/");
 		drChrome.manage().window().maximize();		
+
 		drChrome.findElement(By.partialLinkText("REGI")).click();
-		Select element=new Select(drChrome.findElement(By.name("country")));
+
+		Select CountryElement=new Select(drChrome.findElement(By.name("country")));
 
 		//Select element=new Select(drChrome.findElement(By.id("")));
 
-		List<WebElement>items=element.getOptions();
-		System.out.println("no of items are : "+items.size());
+		List<WebElement>allCountry=CountryElement.getOptions();
+		System.out.println("no of Countries are : "+allCountry.size());
 
 		String expectCountry="ANGOLA ";
 
-		for(int i=0; i<items.size();i++)
+		for(int i=0; i<allCountry.size();i++)
 		{
-			String itemList=items.get(i).getText();
+			String itemInList=allCountry.get(i).getText();
 			Thread.sleep(1000);
-			System.out.println(itemList);
+			System.out.println(i+1+". "+itemInList);
 
-			//verify expectCountry is exist in itemlist or not??
+			//verify expectCountry is exist in All Country list or not??
 
-			if(expectCountry.equalsIgnoreCase(itemList))
+			if(expectCountry.equalsIgnoreCase(itemInList))
 			{
-				System.out.println("Country found in Item List...");
-				Thread.sleep(5000);
+				System.out.println("Country found in List...");
+				//Thread.sleep(5000);
 				break;
 			}
 		}
 		drChrome.close();
+
+		// checking in another way using amazon site.
+
+		WebDriver drChrome2=new ChromeDriver();
+		drChrome2.navigate().to("https://www.amazon.in/");
+		drChrome2.manage().window().maximize();		
+
+		Select searchElement=new Select(drChrome2.findElement(By.id("searchDropdownBox")));
+
+		List<WebElement>AllItems=searchElement.getOptions();
+		System.out.println("no of items are : "+AllItems.size());
+
+		String expectItem="books";
+
+		for(int j=0;j<AllItems.size();j++)
+		{
+			String ItemInList=AllItems.get(j).getText();
+			Thread.sleep(1000);
+			System.out.println(j+1+". "+ItemInList);
+			if(expectItem.equalsIgnoreCase(ItemInList))
+			{
+				System.out.println("Item found in List...");
+				//Thread.sleep(5000);
+				break;
+			}
+		}
+		drChrome2.close();
 	}
 
 }
