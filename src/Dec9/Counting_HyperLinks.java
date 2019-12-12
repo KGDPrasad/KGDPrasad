@@ -18,8 +18,10 @@ public class Counting_HyperLinks {
 		driverChrome.get("https://www.google.com/");
 		driverChrome.manage().window().maximize();
 
-		List<WebElement> HyperLinksAll=driverChrome.findElements(By.tagName("a"));
+		//get collection of links using for loop
+		System.out.println("Get collection of links using for loop");
 
+		List<WebElement> HyperLinksAll=driverChrome.findElements(By.tagName("a"));
 		System.out.println("Total number of Hyper Links are : "+HyperLinksAll.size());
 
 		for(int i=0;i<HyperLinksAll.size();i++)
@@ -29,18 +31,23 @@ public class Counting_HyperLinks {
 
 			System.out.println("Hyper Link Name : "+HyperLinkName +"\t\t\t"+"Hyper Link URL : "+HyperLinkUrl);
 		}
-		
-		//get collection of links using forEach
+
 		System.out.println("\n\n");
+
+		//get collection of links using forEach
+		System.out.println("Get collection of links using forEach");
+
 		List<WebElement> linksAll=driverChrome.findElements(By.tagName("a"));
 		System.out.println("Total no. of links are : "+linksAll.size());
+
 		for(WebElement each:linksAll)
 		{
 			String linkName=each.getText();
 			String linkUrl=each.getAttribute("href");
+			
 			System.out.println("Link Name : "+linkName+"\t\t"+"Link URL : "+linkUrl);
 		}
-		
+
 		driverChrome.close();
 	}
 
