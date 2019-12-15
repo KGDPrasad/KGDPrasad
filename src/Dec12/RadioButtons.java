@@ -15,8 +15,18 @@ public class RadioButtons {
 		drChrome.manage().window().maximize();
 
 		drChrome.get("https://facebook.com/r.php");
+		
+		/*
+		 * ANOTHER EX:
+		drChrome.get("https://www.naukri.com");
 		Thread.sleep(3000);
-
+		drChrome.findElement(By.id("login_Layer")).click();
+		Thread.sleep(3000);
+		drChrome.findElement(By.xpath("//div[@class='row txtC']//a[contains(text(),'Register Now')]")).click();
+		Thread.sleep(3000);
+		drChrome.findElement(By.xpath("//button[contains(text(),'I am a Professional')]")).click();*/
+		Thread.sleep(3000);
+		
 		List<WebElement>L=drChrome.findElements(By.tagName("input"));
 
 		System.out.println("no of input tags : "+L.size());
