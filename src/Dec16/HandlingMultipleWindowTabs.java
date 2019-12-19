@@ -46,11 +46,6 @@ public class HandlingMultipleWindowTabs {
 			}
 		}
 
-
 		drChrome.quit();
-
-
-
 	}
-
 }

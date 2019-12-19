@@ -29,6 +29,7 @@ public class HandlingMultipleWindows {
 
 		String ParentWindow=drChrome.getWindowHandle();
 		System.out.println("Parent Window ID : "+ParentWindow);
+		System.out.println("Control in Parent Window");
 		Thread.sleep(5000);
 
 		//click on terms link
@@ -46,14 +47,18 @@ public class HandlingMultipleWindows {
 				//switch to child window
 				drChrome.switchTo().window(eachBrowserID);
 				Thread.sleep(5000);
-
+				
+				System.out.println("Control in Child Window");
+				
 				drChrome.findElement(By.name("email")).sendKeys("kprasad@gmail.com");
 				drChrome.findElement(By.name("pass")).sendKeys("zaqwsx_9");
 				drChrome.findElement(By.name("email")).sendKeys(Keys.ENTER);
 				Thread.sleep(5000);
 
+
 				//switch to parent window
 				drChrome.switchTo().window(ParentWindow);
+				System.out.println("Control in Parent Window");
 				drChrome.findElement(By.name("firstname")).sendKeys("KGDP");				
 				Thread.sleep(5000);
 			}
