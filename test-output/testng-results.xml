@@ -1,121 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
-    <line>
-      <![CDATA[Running Setup in BeforeMethod...]]>
-    </line>
-    <line>
-      <![CDATA[Executing SignOnLink]]>
-    </line>
-    <line>
-      <![CDATA[Executing TearDown in AfterMethod...]]>
-    </line>
-    <line>
-      <![CDATA[           ]]>
-    </line>
-    <line>
-      <![CDATA[Running Setup in BeforeMethod...]]>
-    </line>
-    <line>
-      <![CDATA[Executing HotelsLink]]>
-    </line>
-    <line>
-      <![CDATA[Executing TearDown in AfterMethod...]]>
-    </line>
-    <line>
-      <![CDATA[           ]]>
-    </line>
-    <line>
-      <![CDATA[Running Setup in BeforeMethod...]]>
-    </line>
-    <line>
-      <![CDATA[Executing HotelsLink]]>
-    </line>
-    <line>
-      <![CDATA[Executing TearDown in AfterMethod...]]>
-    </line>
-    <line>
-      <![CDATA[           ]]>
-    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="59092" started-at="2019-12-28T03:03:06Z" finished-at="2019-12-28T03:04:05Z">
+  <suite name="Default suite" duration-ms="15196" started-at="2019-12-29T12:12:38Z" finished-at="2019-12-29T12:12:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="59092" started-at="2019-12-28T03:03:06Z" finished-at="2019-12-28T03:04:05Z">
-      <class name="Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority@71e7a66b]" name="Setup" is-config="true" duration-ms="10495" started-at="2019-12-28T08:33:06Z" finished-at="2019-12-28T08:33:16Z">
+    <test name="Default test" duration-ms="15196" started-at="2019-12-29T12:12:38Z" finished-at="2019-12-29T12:12:53Z">
+      <class name="Dec27.ScreenShot_bySelenium">
+        <test-method status="PASS" signature="TakeScreenShot()[pri:0, instance:Dec27.ScreenShot_bySelenium@17ed40e0]" name="TakeScreenShot" duration-ms="15175" started-at="2019-12-29T17:42:38Z" finished-at="2019-12-29T17:42:53Z">
           <reporter-output>
-            <line>
-              <![CDATA[Running Setup in BeforeMethod...]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="SignOnLink()[pri:0, instance:Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority@71e7a66b]" name="SignOnLink" duration-ms="5230" started-at="2019-12-28T08:33:16Z" description="working with SignOnLink" finished-at="2019-12-28T08:33:22Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Executing SignOnLink]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- SignOnLink -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority@71e7a66b]" name="TearDown" is-config="true" duration-ms="6220" started-at="2019-12-28T08:33:22Z" finished-at="2019-12-28T08:33:28Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Executing TearDown in AfterMethod...]]>
-            </line>
-            <line>
-              <![CDATA[           ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority@71e7a66b]" name="Setup" is-config="true" duration-ms="9402" started-at="2019-12-28T08:33:28Z" finished-at="2019-12-28T08:33:37Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Running Setup in BeforeMethod...]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="HotelsLink()[pri:0, instance:Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority@71e7a66b]" name="HotelsLink" duration-ms="5182" started-at="2019-12-28T08:33:37Z" description="working with HotelsLink" finished-at="2019-12-28T08:33:42Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Executing HotelsLink]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- HotelsLink -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority@71e7a66b]" name="TearDown" is-config="true" duration-ms="4151" started-at="2019-12-28T08:33:42Z" finished-at="2019-12-28T08:33:46Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Executing TearDown in AfterMethod...]]>
-            </line>
-            <line>
-              <![CDATA[           ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="Setup()[pri:0, instance:Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority@71e7a66b]" name="Setup" is-config="true" duration-ms="8975" started-at="2019-12-28T08:33:46Z" finished-at="2019-12-28T08:33:55Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Running Setup in BeforeMethod...]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="HotelsLink()[pri:0, instance:Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority@71e7a66b]" name="HotelsLink" duration-ms="5206" started-at="2019-12-28T08:33:55Z" description="working with HotelsLink" finished-at="2019-12-28T08:34:01Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Executing HotelsLink]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- HotelsLink -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority@71e7a66b]" name="TearDown" is-config="true" duration-ms="4205" started-at="2019-12-28T08:34:01Z" finished-at="2019-12-28T08:34:05Z">
-          <reporter-output>
-            <line>
-              <![CDATA[Executing TearDown in AfterMethod...]]>
-            </line>
-            <line>
-              <![CDATA[           ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority -->
+        </test-method> <!-- TakeScreenShot -->
+      </class> <!-- Dec27.ScreenShot_bySelenium -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

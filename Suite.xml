@@ -1,0 +1,8 @@
+<suite name = "KGDP">
+	<test name = "Report" parallel = "true">
+		<classes>
+			<class name="Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority"/>
+			
+		</classes>
+	</test>
+</suite>

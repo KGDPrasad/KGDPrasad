@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [KGDP]">
+  <test name="Report(failed)" parallel="true">
+    <classes>
+      <class name="Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority">
+        <methods>
+          <include name="TearDown"/>
+          <include name="HotelsLink"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- Dec27.TestNG_Annotations_BeforeMethod_Project_with_Priority -->
+    </classes>
+  </test> <!-- Report(failed) -->
+</suite> <!-- Failed suite [KGDP] -->
