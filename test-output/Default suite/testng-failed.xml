@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Dec27.ScreenShot_bySelenium">
+      <class name="Jan3.OrangeHRM">
         <methods>
-          <include name="TakeScreenShot"/>
+          <include name="setUp"/>
+          <include name="VerifyLogin"/>
+          <include name="DownTear"/>
         </methods>
-      </class> <!-- Dec27.ScreenShot_bySelenium -->
+      </class> <!-- Jan3.OrangeHRM -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
