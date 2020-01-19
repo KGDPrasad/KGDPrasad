@@ -3,13 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Jan3.OrangeHRM">
+      <class name="Jan4.Demo_Extenreport">
         <methods>
-          <include name="setUp"/>
-          <include name="VerifyLogin"/>
-          <include name="DownTear"/>
+          <include name="demoTestPass1"/>
+          <include name="generateReport"/>
+          <include name="demoTestSkip"/>
+          <include name="endreport"/>
+          <include name="demoTestPass2"/>
+          <include name="demoTestFail"/>
         </methods>
-      </class> <!-- Jan3.OrangeHRM -->
+      </class> <!-- Jan4.Demo_Extenreport -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

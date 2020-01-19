@@ -19,25 +19,29 @@ public class ReadWriteIntoExcel {
 		XSSFRow r=ws.getRow(0);					// get 1st row from sheet
 
 		int rc=ws.getLastRowNum();
-		//int cc=ws.getlastcellNum();
-		System.out.println("No of Rows : "+rc);
+		int cc=r.getLastCellNum();
+		System.out.println("No of Rows : "+rc+" -- No of Columns : "+cc);
 
 		for(int i=1; i<=rc; i++)
 		{
 			String userName=ws.getRow(i).getCell(0).getStringCellValue();
-			String Password=ws.getRow(i).getCell(1).getStringCellValue();
+			
+			//String Password=ws.getRow(i).getCell(1).getStringCellValue();
+			// this statement is wrong.
+			//cell value is integer so we need to find out and convert into string
+			
 
 			// suppose cell data contains only integer, unable to get cell data. 
 			// so we need to find out that cell and convert into string.
-			if(wb.getSheetAt(0).getRow(i).getCell(2).getCellType()==Cell.CELL_TYPE_NUMERIC)
+			if(wb.getSheetAt(0).getRow(i).getCell(1).getCellType()==Cell.CELL_TYPE_NUMERIC)
 			{
 				// getting integer cell data if any
-				int cellData=(int)wb.getSheetAt(0).getRow(i).getCell(2).getNumericCellValue();
+				int cellData=(int)wb.getSheetAt(0).getRow(i).getCell(1).getNumericCellValue();
 				// converting integer type into string type
 				String Result=String.valueOf(cellData);
 
-				System.out.println(userName+"      "+Password+"      "+Result);
-				ws.getRow(i).createCell(3).setCellValue("Hello...");
+				System.out.println("User Name : "+userName+"            Password : "+Result);
+				ws.getRow(i).createCell(2).setCellValue("Hello...");
 			}
 		}
 		fi.close();

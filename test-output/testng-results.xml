@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[No of Rows : 5 and No of Columns : 4]]>
+      <![CDATA[No of rows are::5  No of columns are::4]]>
     </line>
     <line>
       <![CDATA[Login Success]]>
@@ -20,19 +20,19 @@
       <![CDATA[Invalid credentials]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="72582" started-at="2020-01-04T09:00:55Z" finished-at="2020-01-04T09:02:08Z">
+  <suite name="Default suite" duration-ms="60857" started-at="2020-01-08T17:19:51Z" finished-at="2020-01-08T17:20:52Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="72582" started-at="2020-01-04T09:00:55Z" finished-at="2020-01-04T09:02:08Z">
-      <class name="Jan3.OrangeHRM">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Jan3.OrangeHRM@5474c6c]" name="setUp" is-config="true" duration-ms="12166" started-at="2020-01-04T14:30:55Z" finished-at="2020-01-04T14:31:08Z">
+    <test name="Default test" duration-ms="60857" started-at="2020-01-08T17:19:51Z" finished-at="2020-01-08T17:20:52Z">
+      <class name="Jan3.OrangeHRM_ExtentReports">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Jan3.OrangeHRM_ExtentReports@6b71769e]" name="setUp" is-config="true" duration-ms="4694" started-at="2020-01-08T22:49:51Z" finished-at="2020-01-08T22:49:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyLogin()[pri:0, instance:Jan3.OrangeHRM@5474c6c]" name="VerifyLogin" duration-ms="55025" started-at="2020-01-04T14:31:08Z" finished-at="2020-01-04T14:32:03Z">
+        <test-method status="PASS" signature="verifyLogin()[pri:0, instance:Jan3.OrangeHRM_ExtentReports@6b71769e]" name="verifyLogin" duration-ms="50562" started-at="2020-01-08T22:49:56Z" finished-at="2020-01-08T22:50:47Z">
           <reporter-output>
             <line>
-              <![CDATA[No of Rows : 5 and No of Columns : 4]]>
+              <![CDATA[No of rows are::5  No of columns are::4]]>
             </line>
             <line>
               <![CDATA[Login Success]]>
@@ -50,12 +50,12 @@
               <![CDATA[Invalid credentials]]>
             </line>
           </reporter-output>
-        </test-method> <!-- VerifyLogin -->
-        <test-method status="PASS" signature="DownTear()[pri:0, instance:Jan3.OrangeHRM@5474c6c]" name="DownTear" is-config="true" duration-ms="5365" started-at="2020-01-04T14:32:03Z" finished-at="2020-01-04T14:32:08Z">
+        </test-method> <!-- verifyLogin -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Jan3.OrangeHRM_ExtentReports@6b71769e]" name="tearDown" is-config="true" duration-ms="5585" started-at="2020-01-08T22:50:47Z" finished-at="2020-01-08T22:50:52Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DownTear -->
-      </class> <!-- Jan3.OrangeHRM -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- Jan3.OrangeHRM_ExtentReports -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
